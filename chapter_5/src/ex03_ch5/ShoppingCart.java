@@ -27,8 +27,9 @@ public class ShoppingCart {
         System.out.println(message);
 
         // Iterate through and print out the items from the items array
+        System.out.println("Items bought: ");
         for(String item : items){
-            System.out.println("The price of this " + item + " is " + price);
+            System.out.print(item + ", ");
         }
     }
 }
