@@ -8,7 +8,7 @@ public class Item {
     static int nextId = 1;
 
     // Default constructor sets default values
-    public Item(){
+    public Item () {
         setId();
         setDesc("No description assigned.");
         setPrice(0.00);
@@ -16,54 +16,54 @@ public class Item {
     }
 
     // Overloaded constructor takes description and price
-    public Item(String desc, double price, char cCode) {
+    public Item ( String desc, double price, char cCode ) {
         setId();
         setDesc(desc);
         setPrice(price);
         setColorCode(cCode);
     }
 
-    public void display(){
-        System.out.println("Item description: "+getDesc());
-        System.out.println("\tID: "+getId());
-        System.out.println("\tPrice: "+getPrice());
-        System.out.println("\tColor: "+getColorCode());
+    public void display () {
+        System.out.println("Item description: " + getDesc());
+        System.out.println("\tID: " + getId());
+        System.out.println("\tPrice: " + getPrice());
+        System.out.println("\tColor: " + getColorCode());
     }
 
     // Getter and Setter methods
-    private void setId() {
+    private void setId () {
         id = Item.nextId++;
     }
 
-    public int getId() {
+    public int getId () {
         return id;
     }
 
-    public String getDesc() {
+    public String getDesc () {
         return desc;
     }
 
-    private void setDesc(String desc) {
+    private void setDesc ( String desc ) {
         this.desc = desc;
     }
 
-    public double getPrice() {
+    public double getPrice () {
         return price;
     }
 
-    private void setPrice(double price) {
+    private void setPrice ( double price ) {
         this.price = price;
     }
 
-    public char getColorCode() {
+    public char getColorCode () {
         return colorCode;
     }
 
-    public void setColorCode(char colorCode) {
+    public void setColorCode ( char colorCode ) {
         this.colorCode = colorCode;
     }
 
-    public String toString(){
+    public String toString () {
         return this.getDesc();
     }
 }
