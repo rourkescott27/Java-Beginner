@@ -12,7 +12,7 @@ public class ShoppingCart {
     public static void main ( String[] args ) {
         Item item1 = new Item();
 
-        if(item1.setColour(' ')){
+        if(item1.setColour('G')){
             System.out.println(item1.colour);
         } else {
             System.out.println("Please use a valid colour code to proceed");
